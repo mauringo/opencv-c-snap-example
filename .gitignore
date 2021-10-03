@@ -1,0 +1,36 @@
+# ignore vim garbage
+*.swp
+*.swo
+*.swn
+
+# ignore cmake garbage
+CMakeCache.txt
+cmake_install.cmake
+CMakeFiles/
+
+logs/
+
+# ignore binaries
+img2vector
+
+# ignore config file to allow developers to include their own config for testing
+
+# ignore data files
+data/
+
+# ignore csv files produced by program
+*.csv
+
+Makefile
+
+
+# Created by https://www.gitignore.io/api/snapcraft
+
+### Snapcraft ###
+# Snapcraft
+parts/
+prime/
+stage/
+*.snap
+
+# End of https://www.gitignore.io/api/snapcraft
