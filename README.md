@@ -1,6 +1,11 @@
-# img2vector
+# opencv C snap example
 
-A tool written in C++ and OpenCV to vectorize a set of images and save to file. Currently saves pixel values in normalized form - `x / 255`. Program converts all images to grayscale first before producing the vector.
+This is an example regarding Opencv and C implementation. 
+The main.cpp is contained inside the **src** folder. it is 
+compiled while building the snap.
+
+The Opencv library could be obtained from ubuntu store or it is possible to compile 
+an arbitrary library version while building (this part is commented on the snapcraft.yaml)
 
 ## Manual Installation
 ```bash
@@ -11,13 +16,6 @@ $ make
 ## Installing as a snap
 ```bash
 $ snapcraft
-$ sudo snap install img2vector_0.1_*.snap --dangerous --devmode # we're not signed
+$ sudo snap install snapname_0.1_*.snap --dangerous --devmode # we're not signed
 ```
 
-## Syntax
-```bash
-$ img2vector [input-dir] [output-file]
-
-# Example
-$ img2vector ~/Pictures/data data.csv
-```
